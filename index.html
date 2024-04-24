@@ -3,29 +3,195 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-    
-    
-    
-    
-    
-    </head>
-  <body>
-<a href="https://dokyongryoo.github.io/Intertwingularity/">wherever we go</a>
+  <title> Breathe </title>
+  <style> 
+      img {opacity: 0.4;} 
+      img:hover {opacity: 1.0;} 
+      body {color: lightblue} 
+      p {
+        font-size: 30px;
+        text-align: center; 
+    }
+  
+  * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
-<p>
-  The smallest part of the world 
-  
-<br>
-<br>
-  
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.grid-container {
+  margin: auto;
+  width: 90%;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.collage1 {
+  background-image: url(https://stsci-opo.org/STScI-01GWQ9T3B8VX5623579GZY4M0P.jpg), url(https://news.uchicago.edu/sites/default/files/styles/full_width/public/images/2022-11/computer-science-illustration.jpg?itok=aP4ENtrc), url(https://media.wired.com/photos/5932474caef9a462de981b8c/master/w_1600,c_limit/opte-maps.jpg);
+  background-size: cover, cover, cover; 
+  background-position: absolute, relative, relative; 
+  z-index: 3, 2, 1;
+  opacity: 1, 0.8, 0.6;
+}
+.collage1 .item {
+  border: 5px solid white;
+}
+
+.collage2 {
+  background-image: url(https://stsci-opo.org/STScI-01GG86D49QPMKSME3SRCNANW2Y.png), url(https://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/s3/field/field_image_main/shutterstock_1092234560.jpg?itok=b5as8_7f), url(https://media.wired.com/photos/5932474caef9a462de981b8c/master/w_1600,c_limit/opte-maps.jpg);
+  background-position: relative, relative, relative; 
+  background-size: cover, cover, cover;
+  z-index: 3, 2, 1;
+  opacity: 1, 0.8, 0.6; 
+}
+.collage2 .item {
+  border: 5px solid white;
+}
+
+.item {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(255, 165, 0, 0.5) 8px 0px 25px 5px;
+}
+
+.item1 {
+  z-index: 10;
+  grid-area: 1/5/7/11;
+}
+.item2 {
+  z-index: 6;
+  grid-area: 5/1/11/7;
+}
+.item3 {
+  z-index: 5;
+  grid-area: 4/6/11/13;
+}
+.item4 {
+  grid-area: 1/-1/8/-10;
+}
+.item5 {
+  z-index: 10;
+  grid-area: 7/-3/11/-7;
+}
+.item6 {
+  z-index: 6;
+  grid-area: -1/3/-9/11;
+}
+.item7 {
+  z-index: 6;
+  grid-area: -3/-2/-9/-8;
+}
+.item8 {
+  z-index: 5;
+  grid-area: 10/10/18/18
+}    
+
+.grid-container > * {
+  transition: all 0.7s;
+}
+.grid-container img:hover {
+  z-index: 99;
+  transform: scale(1.3);
+      }  
+
+.grid-container .item:hover {
+  z-index: 99;
+  transform: scale(1.3);
+}
+    </style>
+    </head>
+    
+  <body bgcolor="black">
+  <p>
+    wherever we go
+    </p>
+  <div class="container collage1">
+  <div class="grid-container">
+    <div class="item item1">
+      <img src="https://s36500.pcdn.co/wp-content/uploads/2018/04/Trail-of-Tears-1839-Zinn-Education-Project-.jpg" alt="item">
+    </div>
+    <div class="item item2">
+      <img src="https://awesomegang.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/11/eBook-Cover-scaled.jpg" alt="item" width="400" height="400">
+    </div>
+    <div class="item item3">
+      <img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1613789590/210219-frye-Acapulco-tease_hhaoxw" alt="item">
+    </div>
+    <div class="item item4">
+      <img src="https://d3i6fh83elv35t.cloudfront.net/static/2023/03/maternal-deaths-by-race-1024x736.png" alt="item">
+    </div>
+    <div class="item item5">
+      <img src="https://mma.prnewswire.com/media/1097131/Lays.jpg?p=twitter" alt="item">
+    </div>
+    <div class="item item6">
+      <img src="https://media.nationalpriorities.org/uploads/militarized_pie_chart_2023_large.png" alt="item">
+    </div>
+    <div class="item item7">
+      <img src="https://zoesaadia.com/wp-content/uploads/2020/04/lengua-nahuatl-honduras.jpg" alt="item">
+    </div>
+    <div class="item item8">
+      <img src="https://salidasteamplant.com/wp-content/uploads/2023/02/EEAAO-Film-Poster-300x169.jpg" alt="item">
+    </div>
+  </div>
+</div>
+   <p>the heavens never draw near</p> 
+<div class="container collage2">
+  <div class="grid-container">
+    <div class="item item1">
+      <img src="https://img.global.news.samsung.com/global/wp-content/uploads/2017/09/Galaxy-Note8-Global-Launch_main_1.jpg" alt="item">
+    </div>
+    <div class="item item2">
+      <img src="https://static.972mag.com/dev/uploads/2019/08/Lydd.jpg" alt="item">
+    </div>
+    <div class="item item3">
+      <img src="https://images.ctfassets.net/lnhrh9gqejzl/3scdgUVLCbEOLxCWEVrT7q/eacc3859fd3f2579578b9fe850f12195/Blog-Header_1__1_.gif" alt="item">
+    </div>
+    <div class="item item4">
+      <img src="https://pbs.twimg.com/media/GLNgV5tWsAAVXm4.jpg" alt="item">
+    </div>
+    <div class="item item5">
+      <img src="https://pbs.twimg.com/media/GJ20YX1WkAApyCV.jpg" alt="item">
+    </div>
+    <div class="item item6">
+      <img src="https://staticweb.usafacts.org/media/images/state-of-the-unio.width-1200.format-webp.webpquality-70.webp" alt="item" >
+    </div>
+    <div class="item item7">
+       <img src="https://i0.wp.com/theatlantavoice.com/wp-content/uploads/2023/10/Screen-Shot-2023-10-02-at-3.07.30-PM.png?resize=1024%2C803&ssl=1" alt="item">
+    </div>
+     <div class="item item8">
+      <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/jjk-chapter-256-spoilers-leaks.jpg" alt="item">
+    </div>
+  </div>
+</div>  
+    
+    
+    
+    
+    
+<p>     
 <a href="https://klee2024.github.io/interwingularity/">breathe, it's all you are</a>  
 
 </p> 
     
-    
-    
     </body>
-    
+</html>
     
 
